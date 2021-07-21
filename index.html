@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende hoy</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+</head>
+<body>
+    <header>
+        <div class="arriba">
+            <div class="titulos">
+                <h1>Fernando Villarruel</h1>
+                <h3>Sistemas Informáticos</h3>
+            </div>
+            <div class="bar">
+                <h2 id="barmenu"><i class="fa fa-bars" aria-hidden="true"></i></h2>
+            </div>
+            </div>
+            <div class="menu" id="menu">
+                <div class="fondo">
+                <nav>
+                    <span id="ocultamenu"><i class="fa fa-times" aria-hidden="true"></i></span>                    <ul>
+                        <li class="liinicio"><a href="#">Home</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Recursos</a> </li>
+                        <li class="lifinal"><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+
+        </div>
+        </div>
+    </header>
+
+    <div class="principal">
+        <div class="opacidad">
+            <div class="txt">
+                <h2>Aprende hoy y forma tu Futuro</h2>
+                <h1>ÉXITO</h1>
+                <a href="#">Ingresa</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="abajo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut earum quae voluptatum voluptatibus minus hic blanditiis atque voluptates deserunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt quisquam ad doloribus recusandae, id ipsa saepe iste maiores accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt quisquam ad doloribus recusandae, id ipsa saepe iste maiores accusantium!</p>
+        
+    </div>
+    <script>
+        
+        $(document).ready(function(){
+            
+            $('#barmenu').click(function(){
+                $('.menu').addClass('aparecemenu');
+            });
+            $('#ocultamenu').click(function(){
+                $('.menu').removeClass('aparecemenu');
+            });            
+
+        });
+    </script>
+</body>
+</html>
