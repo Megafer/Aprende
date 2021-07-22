@@ -172,6 +172,12 @@ header {
 
 @media(min-width:640px)  {
     /*ESTE CÓDIGO ES PARA AGRANDAR LAS LETRAS, NO CAMBIA EN NADA EL MENÚ, SI GUSTAN PUEDEN BORRARLO NOrMAL*/
+
+html {
+    scroll-behavior: smooth;
+    } 
+/*  En HTNL poner el scroll-behavior: smooth ;  suavisa el movimiento. */
+    
 .arriba {
     padding-left: 30px;
     padding-right: 30px;
@@ -196,6 +202,15 @@ header {
 /* PARA PC */
 
 @media(min-width:1020px){
+html {
+    scroll-behavior: smooth;
+}    
+
+    header {
+    z-index: 1;
+    
+}
+
 .txt h2 {
      font-size: 30px;
     padding:  90px 20% 0% 20%;
@@ -206,6 +221,7 @@ header {
 .txt h1 {
     font-size: 100px;
     animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;    
+    /* margin-top: 0; */
 }
 
 
@@ -219,6 +235,7 @@ header {
     display: initial;
     
 }
+
 
 .menu li:hover {
     -webkit-animation:alert 2s linear 0s 1 normal;
@@ -253,6 +270,11 @@ animation:alert 2s linear 0s 1 normal;
 .bar .fa-bars {
     display: none;
 }
+
+.servicios {
+    padding-top: 80px;
+}
+
 
 header {
     display: flex;
